@@ -18,16 +18,34 @@
 // }
 
 // Question 3...
-let td = document.querySelectorAll("td");
+/*let td = document.querySelectorAll("td");
 const couleur = ['#f20505','#12dd15', '#1212de'];
 td.forEach((elt,i) =>{
     elt.style.background = "#" + (Math.random()*0xFFFFFF << 0).toString(16); //couleur de maniere aleatoire..
     elt.style.height = "50px";
     elt.style.width = "100px"
-});
+});*/
 // for( let i=0; i<td.length; i++) {
 //     console.log(td[i]);
 //     td[i].style.background = couleur[i % couleur.length];
 //     td[i].style.width = "150px";
 //     td[i].style.height = "50px";
 // }
+
+//Question4
+//const p = document.querySelectorAll('li');
+// p.forEach((elt,i)=>{
+//     if(i%2 == 0){
+//         elt.remove();
+//     }
+// })
+//Question5
+ let tab=["Pomme","Banane", "Orange"] ;
+ const p= document.createElement('ul');
+ document.body.appendChild(p);
+ tab.forEach((elt)=>{
+    let li= document.createElement('li');
+    li.textContent= elt;
+    p.appendChild(li);
+    
+ });
