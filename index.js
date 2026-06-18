@@ -40,12 +40,39 @@ td.forEach((elt,i) =>{
 //     }
 // })
 //Question5
- let tab=["Pomme","Banane", "Orange"] ;
- const p= document.createElement('ul');
- document.body.appendChild(p);
- tab.forEach((elt)=>{
-    let li= document.createElement('li');
-    li.textContent= elt;
-    p.appendChild(li);
+//  let tab=["Pomme","Banane", "Orange"] ;
+//  const p= document.createElement('ul');
+//  document.body.appendChild(p);
+//  tab.forEach((elt)=>{
+//     let li= document.createElement('li');
+//     li.textContent= elt;
+//     p.appendChild(li);
     
- });
+//  });
+//Exo2
+ //question 1
+ /*
+let selectDiv = document.querySelectorAll('div');
+for( let i=0; i<selectDiv.length; i++) {
+    let paragraph = document.createElement('p');
+    paragraph.textContent = "Enfant ajoute";
+    selectDiv[i].appendChild(paragraph);
+}
+//question2
+let selectUL = document.querySelector('ul');
+
+while(selectUL.firstChild){
+    selectUL.removeChild(selectUL.firstChild);
+}*/
+
+//question3
+let selectSpan = document.querySelector('span');
+let mama = selectSpan.parentElement;
+while(mama.tagName !== 'HTML'){
+    console.log(mama);
+    mama = mama.parentElement;   
+}
+
+
+
+
